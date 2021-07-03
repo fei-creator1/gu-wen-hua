@@ -1,0 +1,170 @@
+/*-----------------------------------------------------
+Table of Contents
+
+- # color #222
+- # background #222
+- # color #444
+- # color #555
+- # color #666
+- # color #777
+- # color #fff
+- # background #fff
+- # background #f7f7f5 	- Background Color
+- # background #fd6d4d 	- Primary Color
+- # color #ff4b23 		- Secondary Color
+- # background #ff4b23 	- Secondary Color
+- # color #0c3fbf 		- Accent Color
+- # background #0c3fbf	- Accent Color
+- # color #fed0c5
+
+------------------------------------------------------*/
+
+/*-----------------------------------------------------
+# color #222
+------------------------------------------------------*/
+
+body,
+a,
+.footer .section-one .info ul li:first-child {
+	color: #222;
+}
+
+/*-----------------------------------------------------
+# background #222
+------------------------------------------------------*/
+
+.open-nav i,
+.open-nav i:before,
+.open-nav i:after,
+.cta-primary {
+	background: #222;
+}
+
+/*-----------------------------------------------------
+# color #444
+------------------------------------------------------*/
+.footer .section-one .info ul li,
+.footer .section-one .info ul li a,
+.footer .get-in-touch p,
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-info p {
+	color: #444;
+}
+
+/*-----------------------------------------------------
+# color #555 
+------------------------------------------------------*/
+
+.blog-item .title a:hover,
+.related-posts .title a:hover {
+	color: #555;
+}
+
+/*-----------------------------------------------------
+# color #666 
+------------------------------------------------------*/
+.blog-post .author,
+.blog-post .post-img figcaption {
+	color: #666;
+}
+
+/*-----------------------------------------------------
+# color #777 
+------------------------------------------------------*/
+
+nav a:hover,
+.footer .section-one .info ul li a:hover,
+.social-media li a:hover,
+.next-project a:hover,
+.blog-post .comment .publication-date {
+	color: #777;
+}
+
+/*-----------------------------------------------------
+# color #fff 
+------------------------------------------------------*/
+
+.close-nav,
+.mobile-nav nav ul li a,
+.contact-form input[type=submit],
+.cta-primary,
+.blog-post .header a,
+.blog-post .quote blockquote {
+	color: #fff;
+}
+
+/*-----------------------------------------------------
+# background #fff
+------------------------------------------------------*/
+
+.blog-post .open-nav i,
+.blog-post .open-nav i:before,
+.blog-post .open-nav i:after,
+.blog-post .related-posts div {
+	background: #fff;
+}
+
+/*-----------------------------------------------------
+# background #f7f7f5
+------------------------------------------------------*/
+
+body {
+	background: #f7f7f5;
+}
+
+/*-----------------------------------------------------
+# background #fd6d4d
+------------------------------------------------------*/
+
+.thumbnail-wrapper,
+.mobile-nav,
+.blog-post .quote blockquote {
+	background: #fd6d4d;
+}
+
+/*-----------------------------------------------------
+# color #ff4b23
+------------------------------------------------------*/
+
+.works-item .category,
+.blog-item .category,
+.blog-post .category,
+.contact h2,
+.contact-us h2,
+.blog-post .comment .reply,
+.cta-secondary:hover  {
+	color: #ff4b23;
+}
+
+/*-----------------------------------------------------
+# background #ff4b23
+------------------------------------------------------*/
+
+.contact-form input[type=submit],
+.cta-primary:hover {
+	background: #ff4b23;
+}
+
+/*-----------------------------------------------------
+# color #0c3fbf - Accent Color
+------------------------------------------------------*/
+
+.blog-post .comment .reply:hover {
+	color: #0c3fbf;
+}
+/*-----------------------------------------------------
+# background #0c3fbf - Accent Color
+------------------------------------------------------*/
+
+.contact-form input[type=submit]:hover {
+	background: #0c3fbf;
+}
+
+/*-----------------------------------------------------
+# color #fed0c5
+------------------------------------------------------*/
+
+.blog-post header a:hover {
+	color: #fed0c5;
+}

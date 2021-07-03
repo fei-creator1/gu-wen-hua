@@ -1,0 +1,896 @@
+/*-----------------------------------------------------
+Table of Contents
+
+1. General Styles
+2. Blocks & Pages
+	# About
+	# Blog
+	# Blog Post
+	# Case Study
+	# Contact
+	# Footer
+	# Header
+	# Hero
+	# Works
+------------------------------------------------------*/
+
+/*-----------------------------------------------------
+1. General Styles
+------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.cta-primary {
+	display: block;
+	height: 56px;
+	letter-spacing: .3px;
+	line-height: 56px;
+	text-align: center;
+	transition: all .2s linear;
+	width: 232px;
+}
+
+.cta-secondary {
+	border-bottom: 1px solid #222;
+	padding-bottom: 8px;
+}
+
+.cta-secondary:hover {
+	border-bottom: 1px solid #ff4b23;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.container-large {
+	max-width: 1720px;
+	margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #777;
+	outline: none;
+}
+
+.contact-form input[name=name]:focus,
+.contact-form input[name=email]:focus,
+.contact-form textarea:focus {
+	border-bottom: 2px solid #222;
+}
+
+.contact-form input {
+	margin-bottom: 36px;
+}
+
+.contact-form input::placeholder,
+.contact-form input,
+.contact-form textarea,
+.contact-form textarea::placeholder {
+	font-family: Inter, sans-serif;
+	font-size: 1.25rem;
+}
+
+.contact-form input[name=name],
+.contact-form input[name=email] {
+	padding-bottom: 19px;
+	width: 100%;
+}
+
+.contact-form textarea {
+	height: 163px;
+	line-height: 1.5;
+	resize: none;
+	width: 100%;
+}
+
+.contact-form input[type=submit] {
+	border: none;
+	cursor: pointer;
+	float: right;
+	height: 80px;
+	line-height: 80px;
+	margin: 42px 0 0 0;
+	text-transform: capitalize;
+	transition: all .2s linear;
+	width: 272px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.img-cover  {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------
+2. Blocks & Pages
+------------------------------------------------------*/
+
+/* =============== # About =============== */
+
+.about {
+	margin-top: 119px;
+}
+
+.about h1 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-left: 88px;
+}
+
+.about .info {
+	float: right;
+	margin: -24px 80px 0 0;
+	width: 43%;
+}
+
+.about .info p {
+	font-size: 1.125rem;
+	line-height: 1.8;
+}
+
+.about .info p:first-child {
+	margin-bottom: 12px;
+}
+
+.about .img-one {
+	float: right;
+	height: 472px;
+	margin: 142px 0 122px 0;
+	width: 50%;
+}
+
+.about .img-two {
+	height: 600px;
+	margin: 142px 0 122px 0;
+	width: 100%;
+}
+
+.awards {
+	margin-bottom: 112px;
+}
+
+.awards h2,
+.services h2,
+.clients h2 {
+	float: left;
+	font-family: Fahkwang, sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+	width: 50%;
+}
+
+.awards ul,
+.services ul,
+.clients ul {
+	float: left;
+	font-size: 1.125rem;
+	list-style: none;
+	line-height: 1.9;
+	margin-top: 30px;
+	width: 50%;
+}
+
+/* =============== # Blog =============== */
+
+.blog {
+	margin: 137px 0 127px 0;
+}
+
+.blog-item {
+	margin-bottom: 60px;
+}
+
+.blog-item:last-child {
+	margin-bottom: 0;
+}
+
+.blog-item .title {
+	font-family: Fahkwang, sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-top: 16px;
+}
+
+.blog-item .category,
+.blog-post .category {
+	font-family: Fahkwang, sans-serif;
+	font-size: .875rem;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+}
+
+/* =============== # Blog Post =============== */
+
+/* --- Entry Header & Thumbnail --- */
+
+.blog-post main {
+	margin-bottom: 132px;
+}
+
+.blog-post .header {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.blog-post .header .logo-white {
+	display: none;
+}
+
+.blog-post .header-wrapper {
+	align-items: center;
+	display: flex;
+	float: left;
+	height: 50vw;
+	padding: 0 32px;
+	width: 50%;
+}
+
+.blog-post .thumbnail-wrapper {
+	align-items: center;
+	display: flex;
+	float: right;
+	height: 50vw;
+	justify-content: center;
+	width: 50%;
+}
+
+.blog-post .thumbnail-wrapper .entry-thumbnail {
+	height: 70%;
+	width: 70%;
+}
+
+.blog-post .title {
+	font-family: Fahkwang, sans-serif;
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 36px 0 36px -3px;
+}
+
+.blog-post .author {
+	font-family: Fahkwang, sans-serif;
+	font-size: .875rem;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+/* --- Entry Content --- */
+
+.blog-post .entry-content {
+	margin: 110px 0;
+}
+
+.blog-post .entry-content p {
+	font-size: 1.125rem;
+	line-height: 1.7;
+	margin-bottom: 20px;
+	width: 47%;
+}
+
+.blog-post .post-img {
+	margin: 56px 0 48px 0;
+	width: 100%;
+}
+
+.blog-post .post-img img {
+	height: 600px;
+	width: 100%;
+}
+
+.blog-post .post-img figcaption {
+	font-size: .875rem;
+	margin-top: 16px;
+}
+
+.blog-post .quote {
+	height: 568px;
+	margin: 56px 0 52px 0;
+	width: 100%;
+}
+
+.blog-post .quote blockquote {
+	align-items: center;
+	display: flex;
+	float: left;
+	height: 568px;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+}
+
+.blog-post .quote blockquote img {
+	margin: auto;
+}
+
+.blog-post .quote blockquote p {
+	font-family: Fahkwang, sans-serif;
+	font-weight: 300;
+	font-size: 2.25rem;
+	line-height: 1.3;
+	margin: 31px 0 31px 0;
+	width: auto;
+}
+
+.blog-post .quote blockquote span {
+	font-family: Fahkwang, sans-serif;
+	font-weight: 300;
+	font-size: 1.125rem;
+	letter-spacing: .7px;
+}
+
+.blog-post .quote .illustration {
+	float: left;
+	height: 568px;
+	width: 50%;
+} 
+
+/* --- Related Posts --- */
+
+.blog-post .blog-section-header {
+	border-left: 10px solid #FF4B23;
+	font-family: Fahkwang, sans-serif;
+	font-size: 1.75rem;
+	font-weight: 500;
+	height: 64px;
+	margin-bottom: 40px;
+	padding: 10px 0 0 32px;
+	text-transform: capitalize;
+}
+
+.blog-post .related-posts .item {
+	align-items: center;
+	box-shadow: 0px 5px 5px 5px rgba(170, 170, 170, 0.05);
+	display: flex;
+	float: left;
+	height: 568px;
+	padding-left: 40px;
+	width: 48.5%;
+}
+
+.blog-post .related-posts .item:nth-of-type(1) {
+	margin-right: 3%;
+}
+
+.blog-post .related-posts .title {
+	font-size: 3rem;
+	margin: 31px 0 0 0;
+}
+
+/* --- Leave Comment --- */
+
+.blog-post .leave-comment {
+	margin-top: 120px;
+}
+
+.blog-post .leave-comment .contact-form {
+	width: 66%;
+}
+
+/* --- Comments --- */
+
+.blog-post .comments {
+	margin-top: 120px;
+}
+
+.blog-post .comments .comment {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 42px;
+	margin-bottom: 48px;
+	width: 45%;
+}
+
+.blog-post .comments .comment:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.blog-post .comment .avatar {
+	height: 144px;
+	width: 144px;
+}
+
+.blog-post .comment .username {
+	font-family: Fahkwang, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin-top: 20px;
+	text-transform: capitalize;
+}
+
+.blog-post .comment .publication-date {
+	display: block;
+	font-size: .75rem;
+	letter-spacing: .2px;
+}
+
+.blog-post .comment p {
+	line-height: 1.6;
+	margin: 18px 0 16px 0;
+}
+
+.blog-post .comment .reply {
+	font-size: .75rem;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+
+/* =============== # Case Study =============== */
+
+.case-study .intro {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+
+.case-study .header {
+	position: absolute;	
+	top: 0;
+	left: 0;
+}
+
+.case-study .content {
+	font-family: Fahkwang, sans-serif;
+}
+
+.case-study .content .title {
+	font-size: 4.5rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 28px 0 38px 0;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.case-study .content .year {
+	font-size: 1.375rem;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	margin-left: -48px;
+}
+
+.case-study .content .services {
+	float: right;
+	font-size: .875rem;
+	letter-spacing: 1.5px;
+	line-height: 1.8;
+	list-style: none;
+	margin-right: -80px;
+	text-transform: uppercase;
+}
+
+.case-study .intro-img {
+	height: 100vh;
+	width: 100%;
+}
+
+.case-study .about-project {
+	margin: 109px 0 110px 0;
+}
+
+.case-study .about-project p {
+	font-size: 1.125rem;
+	line-height: 1.7;
+	margin-bottom: 21px;
+	width: 47%;
+}
+
+.case-study .img-one,
+.case-study .img-two {
+	height: 600px;
+	width: 100%;
+}
+
+.case-study .img-group {
+	margin: auto;
+	width: 88.5%;
+}
+
+.case-study .img-group .img {
+	float: left;
+	height: 568px;
+	width: 46%;
+}
+
+.case-study .img-group .img:nth-of-type(2) {
+	margin: 160px 0 0 8%;
+}
+
+.next-project {
+	display: flex;
+	justify-content: center;
+	padding: 156px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.next-project h3 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 4.5rem;
+	font-weight: 400;
+}
+
+/* =============== # Contact =============== */
+
+.contact {
+	margin: 140px 0 137px 0;
+}
+
+.contact h2,
+.contact-us h2 {
+	font-family: Fahkwang, sans-serif;
+	font-size: .875rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.contact h1 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-top: 24px;
+}
+
+.contact .contact-form {
+	float: left;
+	margin: 44px 128px 0 0;
+	width: 66%;
+}
+
+.contact-info {
+	float: left;
+	margin-top: 72px;
+}
+
+.contact-info div:first-child {
+	margin-bottom: 22px;
+}
+
+.contact-info h3 {
+	font-family: Fahkwang, sans-serif;
+	font-size: .875rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 9px;
+	text-transform: uppercase;
+}
+
+.contact-info p {
+	line-height: 1.6;
+}
+
+.contact-us {
+	align-items: center;
+	display: flex;
+	padding: 137px 0 137px 0;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.contact-us h1 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 4.5rem;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 29px 0 50px 0;
+}
+
+.contact-us .cta-primary {
+	margin: auto;
+}
+
+/* =============== # Footer =============== */
+
+.footer .section-one {
+	padding-bottom: 68px;
+}
+
+.footer .section-one .info {
+	float: right;
+	width: 60%;
+}
+
+.footer .section-one .info ul {
+	float: left;
+	list-style: none;
+}
+
+.footer .section-one .info ul:nth-of-type(1) {
+	padding-right: 130px;
+}
+
+.footer .section-one .info ul:nth-of-type(2) {
+	padding-right: 90px;
+}
+
+.footer .section-one .get-in-touch {
+	float: left;
+	width: 40%;
+}
+
+.footer .section-one .get-in-touch p {
+	margin-bottom: 8px;
+}
+
+.footer .section-one .info ul li {
+	margin-bottom: 6px;
+	text-transform: capitalize;
+}
+
+.footer .section-one .info ul li:first-child,
+.footer .section-one h4 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 12px;
+}
+
+.mailaddress {
+	text-transform: lowercase;
+}
+
+.footer .section-two {
+	border-top: 1px solid #eee;
+	height: 104px;
+	line-height: 104px;
+	text-transform: capitalize;
+}
+
+.copyright {
+	float: left;
+}
+
+.social-media {
+	float: right;
+}
+
+.social-media li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.social-media li:first-child {
+	margin-left: 0;
+} 
+
+/* =============== # Header =============== */
+
+.header {
+	padding-top: 40px;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+}
+
+.header nav {
+	float: right;
+}
+
+.header nav li {
+	float: left;
+	letter-spacing: .1px;
+	list-style: none;
+	margin-left: 60px;
+}
+
+.header nav li a {
+	font-size: 1.125rem;
+	text-transform: capitalize;
+}
+
+.open-nav {
+	display: none;
+	float: right;
+	height: 17px;
+	position: relative;
+	margin-top: 3px;
+	width: 28px;
+}
+
+.open-nav i {
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.open-nav i:before {
+	content: " ";
+	height: 1px;
+	position: absolute;
+	top: -8px;
+	width: 100%;
+}
+
+.open-nav i:after {
+	content: " ";
+	height: 1px;
+	position: absolute;
+	top: 8px;
+	width: 100%;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	bottom: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	transition: opacity .3s, left 0s .4s;
+	z-index: 2;
+}
+
+.mobile-nav.active {
+	left: 0;
+	opacity: 1;
+	transition: opacity .3s, left 0s;
+}
+
+.mobile-nav nav {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mobile-nav nav ul li {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.mobile-nav nav ul li a {
+	font-family: Fahkwang, sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+
+.close-nav {
+	float: right;
+	font-size: 1.3rem;
+	margin: 30px 4px 0 0;
+}
+
+/* =============== # Hero =============== */
+
+.hero {
+	margin: 116px 0 152px 0;
+}
+
+.hero h1 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 5rem;
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+
+}
+
+.hero .cta-primary {
+	margin: 45px auto 0 auto;
+}
+
+/* =============== # Works =============== */
+
+.our-works h1 {
+	font-family: Fahkwang, sans-serif;
+	font-size: 5.5rem;
+	font-weight: 300;
+	line-height: 1.1;
+	margin: 110px 0 55px 0;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.our-works .works {
+	margin: 0 auto 127px auto;
+}
+
+.works {
+	margin: 0 auto;
+	width: 88.5%;
+}
+
+.works-item {
+	float: left;
+	width: 46%;
+}
+
+.works a:nth-of-type(1) .works-item,
+.works a:nth-of-type(3) .works-item,
+.works a:nth-of-type(5) .works-item {
+	margin-right: 8%;
+}
+
+.works-item .thumbnail {
+	height: 568px;
+}
+
+.works a:nth-of-type(2) .works-item .thumbnail,
+.works a:nth-of-type(4) .works-item .thumbnail {
+	height: 664px;
+}
+
+.works a:nth-of-type(2) .works-item {
+	margin: 160px 0 62px 0;
+}
+
+.works a:nth-of-type(3) .works-item {
+	margin-top: -256px;
+}
+
+.works a:nth-of-type(5) .works-item {
+	margin-top: -290px;
+}
+
+.works-item .category {
+	font-family: Fahkwang, sans-serif;
+	font-size: .75rem;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	margin: 27px 0 2px 0;
+	text-transform: uppercase;
+}
+
+.works-item .title {
+	font-family: Fahkwang, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: capitalize;
+}
